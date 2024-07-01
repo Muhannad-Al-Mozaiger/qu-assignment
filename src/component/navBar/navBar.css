@@ -1,0 +1,25 @@
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    z-index: 1000;
+    
+}
+
+nav a {
+    transition: all 0.4s ease;
+}
+
+nav a:hover {
+
+    scale: 1.05;
+
+}

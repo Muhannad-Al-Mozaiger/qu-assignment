@@ -1,0 +1,25 @@
+.input {
+    max-width: 190px;
+    display: none;
+    
+  }
+  
+  .labelFile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    border: 2px dashed #ccc;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: #404040;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 20px;
+  }
+  .uploadImage{
+    height: 130px;
+  }
+  
+  
