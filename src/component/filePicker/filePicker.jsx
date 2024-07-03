@@ -26,14 +26,14 @@ const FilePicker = () => {
         fileReader.readAsText(_file);
     }, [])
     const { getRootProps, acceptedFiles, getInputProps, isDragActive } = useDropzone({ onDrop })
-
+const uploadImg=process.env.PUBLIC_URL+(isDragActive? "/upload.gif":"/upload.png");
     return (
         <div className='vh-100' {...getRootProps()}>
             
             <input  {...getInputProps()} />
             {
                 <label for="file" class="labelFile">
-                    <span><img className='uploadImage' src={isDragActive?"/upload.gif":"/upload.png"} alt="" /></span>
+                    <span><img className='uploadImage' src={uploadImg} alt="" /></span>
                     <p>اسحب الملف هنا او انقر لاختيار ملف</p>
                 </label>
             }
