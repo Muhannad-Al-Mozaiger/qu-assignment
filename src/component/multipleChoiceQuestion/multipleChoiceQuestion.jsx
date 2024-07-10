@@ -24,7 +24,7 @@ const MultipleChoiceQuestion = ({ item, index }) => {
 
         <div className=' row mb-2 align-items-center ' key={choice.id}>
           <div class="col-sm-1 w-auto ">
-            <input type="radio" class="btn-check" name={item.id} id={choice.id} autocomplete="off" />
+            <input type="radio" class="btn-check" checked={answer === choice.id} name={item.id} id={choice.id} onChange={() => _handleAnswer(choice.id)} autocomplete="off" />
             <label class="btn btn-outline-secondary" for={choice.id}>{numeral(_index + 1).format('00')}</label>
           </div>
           <div className='col fw-300'>{choice.content}</div>
