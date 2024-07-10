@@ -17,10 +17,10 @@ console.log(answers===examData.answers);
       const fileContent = JSON.stringify(examData, null, 2);
       if (fileName) {
         // Create a new Blob with the updated content
-        const blob = new Blob([fileContent]);
+        const blob = new Blob([fileContent],{ type: 'application/x-exm'  });
 
         // Create a new File object with the updated Blob
-        const updatedFile = new File([blob], fileName);
+        const updatedFile = new File([blob], fileName,{ type: 'application/x-exm'  });
 
         // Simulate a file download
         const url = URL.createObjectURL(updatedFile);
